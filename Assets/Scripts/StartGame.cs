@@ -5,9 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
+    int n;
     public void OnButtonPress()
     {
-        SceneManager.LoadScene("Tutorial Scene");
-        Debug.Log("Button Pressed");
+        if(n == 0) {
+            SceneManager.LoadScene("Tutorial Scene");
+            //Debug.Log("Button Pressed");
+            n++;
+        }
+        else
+        {
+            SceneManager.LoadScene("AreaSelect");
+        }
     }
 }

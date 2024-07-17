@@ -19,4 +19,9 @@ public class Levelmanager : MonoBehaviour
     {
         SceneManager.LoadScene("Area3");
     }
+
+    public void tutorial()
+    {
+        SceneManager.LoadScene("Tutorial Scene");
+    }
 }

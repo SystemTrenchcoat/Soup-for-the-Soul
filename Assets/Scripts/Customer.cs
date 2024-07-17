@@ -17,6 +17,6 @@ public class Customer : MonoBehaviour
     public Food Order {get; set;}
 
     public string OrderName {get {return order.Name;}}
-    public string OrderDesc {get {return order.Description;}}
+    public Sprite OrderPic {get {return order.FoodImage;}}
 
 }

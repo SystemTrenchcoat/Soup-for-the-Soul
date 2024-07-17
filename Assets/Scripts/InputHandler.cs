@@ -4,14 +4,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting;
 
 public class InputHandler : MonoBehaviour
 {
     private Camera mainCamera;
     public Image orderInfo;
     [SerializeField] TMP_Text orderName;
-    [SerializeField] TMP_Text orderDesc;
+    [SerializeField] Image foodPic;
 
     private void Awake() {
         mainCamera = Camera.main;
@@ -28,7 +27,8 @@ public class InputHandler : MonoBehaviour
     if(rayHit.collider.gameObject.GetComponent<Customer>() != null) {
         orderInfo.gameObject.SetActive(true);
         orderName.text = rayHit.collider.gameObject.GetComponent<Customer>().OrderName;
-        orderDesc.text = rayHit.collider.gameObject.GetComponent<Customer>().OrderDesc;
+        foodPic.GetComponent<Image>().sprite = rayHit.collider.gameObject.GetComponent<Customer>().OrderPic;
+
         }
     }
 }

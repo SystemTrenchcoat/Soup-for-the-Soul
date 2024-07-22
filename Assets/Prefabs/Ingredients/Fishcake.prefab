@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7615586332136653070}
   m_Layer: 0
   m_Name: Fishcake
-  m_TagString: Untagged
+  m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

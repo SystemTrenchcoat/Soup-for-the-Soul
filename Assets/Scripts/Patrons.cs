@@ -6,7 +6,7 @@ public class Patrons : MonoBehaviour
 {
     public Sprite[] sprites;
     public int numPatrons;
-    // Start is called before the first frame update
+    
     void Start()
     {
         

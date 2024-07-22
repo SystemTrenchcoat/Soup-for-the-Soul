@@ -10,6 +10,7 @@ using TMPro;
 
 public class Customer : MonoBehaviour
 {
+    
     [SerializeField] string name;
     [SerializeField] Food order;
 

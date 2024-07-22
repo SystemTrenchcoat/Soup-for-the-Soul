@@ -288,8 +288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da94819c63f5830408c4f00eb23d0a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Image1: {fileID: 2800000, guid: fc0b29dae069ad842af59f548be7f57a, type: 3}
-  Image2: {fileID: 2800000, guid: 55db42be92a35454da609c14cb8656c8, type: 3}
+  Image1: {fileID: 2800000, guid: f2cadfc3a27383f48a8b49ef07e10f74, type: 3}
+  Image2: {fileID: 2800000, guid: dfce1ad7b3439364b8c6130bd32e105a, type: 3}
   CursorMode: 0
   hotspot: {x: 900, y: 1000}
 --- !u!4 &1420320136

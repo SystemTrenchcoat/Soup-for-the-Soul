@@ -31,4 +31,20 @@ public class InputHandler : MonoBehaviour
 
         }
     }
+
+    public void OnHold(InputAction.CallbackContext context) 
+    {
+        if(!context.started) return;
+
+        var rayHit = Physics2D.GetRayIntersection(mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
+        if(!rayHit.collider) return;
+
+        Debug.Log(rayHit.collider.gameObject.name);
+
+        if(Input.GetMouseButtonDown(0) && rayHit.collider.gameObject.CompareTag("Ingredient")) 
+        {
+            rayHit.collider.gameObject.transform.position = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        }
+
+    }
 }

@@ -23,7 +23,6 @@ public class CursorControl : MonoBehaviour
     {
 
         //public static bool GetMouseButtonDown(int button);
-
         if (Input.GetMouseButton(0))
         {
             Cursor.SetCursor(Image2, hotspot, CursorMode);

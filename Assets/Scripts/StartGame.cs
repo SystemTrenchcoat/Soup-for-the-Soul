@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    int n;
+    public static int n;
     public void OnButtonPress()
     {
         if(n == 0) {
             SceneManager.LoadScene("Tutorial Scene");
-            //Debug.Log("Button Pressed");
+            Debug.Log("Button Pressed");
             n++;
+            Debug.Log(n);
         }
         else
         {

@@ -7,21 +7,25 @@ public class Levelmanager : MonoBehaviour
 {
     public void level1()
     {
-        SceneManager.LoadScene("Area1");
+        GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().area = 1;
+        SceneManager.LoadScene("Area1 1");
     }
 
     public void level2()
     {
-        SceneManager.LoadScene("Area2");
+        GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().area = 2;
+        SceneManager.LoadScene("Area1 1");
     }
     
     public void level3()
     {
-        SceneManager.LoadScene("Area3");
+        GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().area = 3;
+        SceneManager.LoadScene("Area1 1");
     }
 
     public void tutorial()
     {
         SceneManager.LoadScene("Tutorial Scene");
+        GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().area = 0;
     }
 }

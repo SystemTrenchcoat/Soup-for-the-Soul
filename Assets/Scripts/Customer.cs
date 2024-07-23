@@ -13,7 +13,6 @@ public class Customer : MonoBehaviour
     
     [SerializeField] string name;
     [SerializeField] Food order;
-    [SerializeField] SpriteRenderer SpriteRenderer;
 
     public string Name {get; set;}
     public Food Order {get; set;}
@@ -22,3 +21,5 @@ public class Customer : MonoBehaviour
     public Sprite OrderPic {get {return order.FoodImage;}}
 
 }
+
+//I am not going to use this cause I have no idea what I am supposed to do with this

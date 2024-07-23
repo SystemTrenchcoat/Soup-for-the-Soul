@@ -21,3 +21,5 @@ public class Customer : MonoBehaviour
     public Sprite OrderPic {get {return order.FoodImage;}}
 
 }
+
+//I am not going to use this cause I have no idea what I am supposed to do with this

@@ -19,7 +19,7 @@ public class CursorControl : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
-        GameObject.FindGameObjectWithTag("Soup").SetActive(false);
+        //GameObject.FindGameObjectWithTag("Soup").SetActive(false);
     }
 
     
@@ -38,12 +38,14 @@ public class CursorControl : MonoBehaviour
             Cursor.SetCursor(Image1, hotspot, CursorMode);
             //Debug.Log("no");
         }
+
+        transform.localPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
         string tg = collision.gameObject.tag;
-        Debug.Log(tg);
+        Debug.Log(collision.gameObject.name);
         if (Input.GetMouseButtonDown(0))
         {
             switch (tg)

@@ -15,7 +15,7 @@ public class ClickableObject : MonoBehaviour
 
     private void FixedUpdate()
     {
-
+        
     }
 
     // Update is called once per frame

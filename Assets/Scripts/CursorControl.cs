@@ -9,7 +9,7 @@ public class CursorControl : MonoBehaviour
     public CursorMode CursorMode = CursorMode.Auto;
     public Vector2 hotspot = Vector2.zero;
 
-    public Soup soup = null;
+    public Soup soup;
    // public static bool GetMouseButtonDown(int button);
     // Start is called before the first frame update
     void Start()

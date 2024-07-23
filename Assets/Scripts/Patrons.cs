@@ -12,6 +12,12 @@ public class Patrons : MonoBehaviour
         
     }
 
+    void GeneratePatron()
+    {
+
+    }
+
+
     // Update is called once per frame
     void Update()
     {

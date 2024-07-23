@@ -41,40 +41,25 @@ public class CursorControl : MonoBehaviour
         transform.localPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        string tg = collision.gameObject.tag;
-        Debug.Log(collision.gameObject.name);
-        if (Input.GetMouseButtonDown(0))
-        {
-            switch (tg)
-            {
-                case "Bowl":
-                    soup.gameObject.SetActive(true);
-                    soup.addBowl();
-                    break;
-                case "Broth":
-                    soup.addBroth();
-                    break;
-                case "Ingredients":
-                    if (gameObject == soup.ingredientList[0])
-                    {
-                        soup.addIngredient(0);
-                    }
-                    if (gameObject == soup.ingredientList[1])
-                    {
-                        soup.addIngredient(1);
-                    }
-                    if (gameObject == soup.ingredientList[2])
-                    {
-                        soup.addIngredient(2);
-                    }
-                    if (gameObject == soup.ingredientList[3])
-                    {
-                        soup.addIngredient(3);
-                    }
-                    break;
-            }
-        }
-    }
+    //private void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    string tg = collision.gameObject.tag;
+    //    Debug.Log(collision.gameObject.name);
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        switch (tg)
+    //        {
+    //            case "Bowl":
+    //                soup.gameObject.SetActive(true);
+    //                soup.addBowl();
+    //                break;
+    //            case "Broth":
+    //                soup.addBroth();
+    //                break;
+    //            case "Ingredient":
+    //                soup.addIngredient(collision.gameObject.GetComponent<ClickableObject>().ingredient);
+    //                break;
+    //        }
+    //    }
+    //}
 }

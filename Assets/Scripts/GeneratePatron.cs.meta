@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/ClickableObject.cs.meta
+guid: a1fc3214e3062694bb3d65225b173c0e
+========
 guid: 540179aca7ada40e8a1d0c6820514db9
+>>>>>>>> b54653949efa9fd1c1d586ae6caad388e1357a0e:Assets/Scripts/GeneratePatron.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

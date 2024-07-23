@@ -17,7 +17,8 @@ public class CursorControl : MonoBehaviour
         //Cursor.SetCursor(Image1, hotspot, CursorMode);
         DontDestroyOnLoad(gameObject);
 
-        soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
+        if (soup != null)
+            soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
         //GameObject.FindGameObjectWithTag("Soup").SetActive(false);
     }
 

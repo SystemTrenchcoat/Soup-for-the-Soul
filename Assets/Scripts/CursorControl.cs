@@ -9,16 +9,16 @@ public class CursorControl : MonoBehaviour
     public CursorMode CursorMode = CursorMode.Auto;
     public Vector2 hotspot = Vector2.zero;
 
-    public Soup soup = null;
-   // public static bool GetMouseButtonDown(int button);
+    //public Soup soup = null;
+    //public static bool GetMouseButtonDown(int button);
     // Start is called before the first frame update
     void Start()
     {
         //Cursor.SetCursor(Image1, hotspot, CursorMode);
         DontDestroyOnLoad(gameObject);
 
-        if (soup != null)
-            soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
+        //if (soup != null)
+        //    soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
         //GameObject.FindGameObjectWithTag("Soup").SetActive(false);
     }
 

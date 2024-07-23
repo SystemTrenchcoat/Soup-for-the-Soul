@@ -13,6 +13,7 @@ public class Customer : MonoBehaviour
     
     [SerializeField] string name;
     [SerializeField] Food order;
+    [SerializeField] SpriteRenderer SpriteRenderer;
 
     public string Name {get; set;}
     public Food Order {get; set;}

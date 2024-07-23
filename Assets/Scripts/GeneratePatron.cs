@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class GeneratePatron : MonoBehaviour
 {
-   private Queue<Customer> patrons = new Queue<Customer>();
+    public Sprite[] sprites;
+    private Queue<Customer> patrons = new Queue<Customer>();
+
+
+
    
 
 }

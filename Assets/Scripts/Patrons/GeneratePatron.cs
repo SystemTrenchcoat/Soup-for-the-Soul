@@ -9,36 +9,24 @@ public class GeneratePatron : MonoBehaviour
     public Sprite[] area2;
     public Sprite[] area3;
     public SpriteRenderer bowl;
-<<<<<<< HEAD
     public Sprite bowls;
-=======
->>>>>>> 7a5116d (Organized scripts, reopen them all)
     public SpriteRenderer soup;
 
 
     void Start()
     {
-<<<<<<< HEAD
-        GetComponent<Renderer>().enabled = true;
-=======
         renderer.enabled = true;
->>>>>>> 7a5116d (Organized scripts, reopen them all)
         MakeCustomer();
     }
 
     void MakeCustomer()
     {
         int i = Random.Range(0,sprites.Length);
-<<<<<<< HEAD
-        //GetComponent<Renderer>().sprite = sprites[i];
-=======
         renderer.sprite = sprites[i];
->>>>>>> 7a5116d (Organized scripts, reopen them all)
     }
 
     void GetOrder()
     {
-<<<<<<< HEAD
         switch(area)
         {
             case 1:
@@ -61,9 +49,6 @@ public class GeneratePatron : MonoBehaviour
                 break;
 
         }
-=======
-       // switch()
->>>>>>> 7a5116d (Organized scripts, reopen them all)
 
 
     }

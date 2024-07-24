@@ -1079,6 +1079,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 544729698}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &568899613
 GameObject:
@@ -1216,6 +1217,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 568899613}
   m_CullTransparentMesh: 1
 >>>>>>> 7a5116ded5a8f3497a3fa48123aa71f9dd28510b
+=======
+>>>>>>> cef7eb2 (Temporary generation method)
 --- !u!1 &717094066
 GameObject:
   m_ObjectHideFlags: 0
@@ -3806,6 +3809,7 @@ Transform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &1693404396
 GameObject:
@@ -4080,6 +4084,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 1884307389}
   m_CullTransparentMesh: 1
 >>>>>>> 7a5116ded5a8f3497a3fa48123aa71f9dd28510b
+=======
+>>>>>>> cef7eb2 (Temporary generation method)
 --- !u!1 &1928251920
 GameObject:
   m_ObjectHideFlags: 0

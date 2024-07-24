@@ -11,7 +11,6 @@ public class GeneratePatron : MonoBehaviour
     public Sprite[] area3;
     public SpriteRenderer bowl;
     public SpriteRenderer soup;
-    public SpriteRenderer renderer;
 
 
     void Start()

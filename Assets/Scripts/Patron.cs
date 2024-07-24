@@ -8,12 +8,14 @@ using UnityEngine.EventSystems;
 using Unity.VisualScripting;
 using TMPro;
 
-public class Customer : MonoBehaviour
+public class Patron : MonoBehaviour
 {
     
     [SerializeField] string name;
     [SerializeField] Food order;
-    [SerializeField] List<Food> foodList;
+    [SerializeField] private List<Food> foodList;
+    [SerializeField] private List<Sprite> spriteList;
+    private Image renderer;
     private bool isServed;
 
     public string Name {get; set;}
@@ -22,14 +24,25 @@ public class Customer : MonoBehaviour
     public string OrderName {get {return order.Name;}}
     public Sprite OrderPic {get {return order.FoodImage;}}
 
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
+    private void Start()
+    {
+        renderer = GetComponent<Image>();
+    }
     public void CheckOrder() 
     {
-        
+
     }
     public void GeneratePatron() 
     {
-        int randomInt = Random.Range(0, foodList.Count - 1);
-        order = foodList[randomInt];
+        int i = Random.Range(0, foodList.Count - 1);
+        order = foodList[i];
+        
+        int j = Random.Range(0, spriteList.Count - 1);
+        renderer.sprite = spriteList[j];
     }
 }
 

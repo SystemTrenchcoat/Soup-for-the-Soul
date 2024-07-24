@@ -5,7 +5,6 @@ using UnityEngine;
 public class GeneratePatron : MonoBehaviour
 {
     public Sprite[] sprites;
-    public SpriteRenderer renderer;
     public Sprite[] area1;
     public Sprite[] area2;
     public Sprite[] area3;
@@ -32,7 +31,5 @@ public class GeneratePatron : MonoBehaviour
 
 
     }
-
-   
 
 }

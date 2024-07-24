@@ -24,10 +24,10 @@ public class InputHandler : MonoBehaviour
 
         Debug.Log(rayHit.collider.gameObject.name);
 
-    if(rayHit.collider.gameObject.GetComponent<Customer>() != null) {
+    if(rayHit.collider.gameObject.GetComponent<Patron>() != null) {
         orderInfo.gameObject.SetActive(true);
-        orderName.text = rayHit.collider.gameObject.GetComponent<Customer>().OrderName;
-        foodPic.GetComponent<Image>().sprite = rayHit.collider.gameObject.GetComponent<Customer>().OrderPic;
+        orderName.text = rayHit.collider.gameObject.GetComponent<Patron>().OrderName;
+        foodPic.GetComponent<Image>().sprite = rayHit.collider.gameObject.GetComponent<Patron>().OrderPic;
 
         }
     }

@@ -9,6 +9,8 @@ public class AssetHandler : MonoBehaviour
     public List<Sprite> area2Ingredients = new List<Sprite>();
     public List<Sprite> area3Ingredients = new List<Sprite>();
 
+    public List<Sprite> areaSprites = new List<Sprite>();
+
     public int area = 0;
 
     public Soup soup = null;
@@ -16,14 +18,24 @@ public class AssetHandler : MonoBehaviour
     void Start()
     {
         Debug.Log(area);
-        if (GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>() != null)
-        {
-            soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
-        }
+        //if (GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>() != null)
+        //{
+        //    soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
+        //}
     }
 
     public void changeIngredients()
     {
+        if (GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>() != null)
+        {
+            soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
+        }
+
+        if (area < areaSprites.Count)
+        {
+            GameObject.FindGameObjectWithTag("Canvas").GetComponent<SpriteRenderer>().sprite = areaSprites[area];
+        }
+
         List<Sprite> ingredients = null;
         switch(area)
         {

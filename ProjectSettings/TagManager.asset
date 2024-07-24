@@ -8,6 +8,8 @@ TagManager:
   - Soup
   - Ingredient
   - Bowl
+  - Canvas
+  - Patron
   layers:
   - Default
   - TransparentFX

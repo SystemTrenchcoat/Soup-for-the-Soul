@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class Soup : MonoBehaviour
 {
@@ -15,30 +17,43 @@ public class Soup : MonoBehaviour
     public void addBowl()
     {
         bowl = true;
-        gameObject.SetActive(true);
+        GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<SpriteRenderer>().sprite = Bowl;
+        Debug.Log("Bowl Placed");
     }
 
     public void addBroth()
     {
         broth = true;
         GetComponent<SpriteRenderer>().sprite = FilledBowl;
+        Debug.Log("Filled Soup");
     }
 
     public void addIngredient(int i)
     {
-        ingredients[i] = true;
-        ingredientList[i].GetComponent<GameObject>().SetActive(true);
+        Debug.Log(i);
+        //ingredients[i] = true;
+        ingredientList[i].GetComponent<SpriteRenderer>().enabled = true;
+    }
+
+    public void giveSoup()
+    {
+        GetComponent<SpriteRenderer>().enabled = false;
+        foreach (GameObject go in ingredientList)
+        {
+            go.GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        ////gameObject.SetActive(false);
-        //foreach(var item in ingredientList)
-        //{
-        //    item.GetComponent<GameObject>().SetActive(false);
-        //}
+        GetComponent<SpriteRenderer>().enabled = false;
+
+        foreach (var item in ingredientList)
+        {
+            item.GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
 
     // Update is called once per frame

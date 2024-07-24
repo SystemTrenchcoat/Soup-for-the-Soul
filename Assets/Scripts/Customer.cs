@@ -32,3 +32,5 @@ public class Customer : MonoBehaviour
         order = foodList[randomInt];
     }
 }
+
+//I am not going to use this cause I have no idea what I am supposed to do with this

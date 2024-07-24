@@ -5,29 +5,24 @@ using UnityEngine;
 public class GeneratePatron : MonoBehaviour
 {
     public Sprite[] sprites;
-    public SpriteRenderer renderer;
-    public int area;
     public Sprite[] area1;
     public Sprite[] area2;
     public Sprite[] area3;
     public SpriteRenderer bowl;
     public Sprite bowls;
     public SpriteRenderer soup;
-    public Sprite soups;
-    public SpriteRenderer ingredient;
 
 
     void Start()
     {
-        renderer.enabled = true;
+        GetComponent<Renderer>().enabled = true;
         MakeCustomer();
     }
 
     void MakeCustomer()
     {
         int i = Random.Range(0,sprites.Length);
-        renderer.sprite = sprites[i];
-        GetOrder();
+        //GetComponent<Renderer>().sprite = sprites[i];
     }
 
     void GetOrder()
@@ -57,7 +52,5 @@ public class GeneratePatron : MonoBehaviour
 
 
     }
-
-   
 
 }

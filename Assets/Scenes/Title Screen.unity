@@ -154,7 +154,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1741608851}
-  m_RootOrder: -1
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -416,7 +416,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1566378596
 GameObject:
@@ -449,7 +449,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2024805111}
-  m_RootOrder: -1
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -536,7 +536,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1741608850
 GameObject:
@@ -572,7 +572,7 @@ RectTransform:
   m_Children:
   - {fileID: 1146978525}
   m_Father: {fileID: 2024805111}
-  m_RootOrder: -1
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -697,9 +697,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: CursorController
       objectReference: {fileID: 0}
+    - target: {fileID: 4025972025895140213, guid: b7e25f15745c21046a59ab9b00066de6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8843968164946983565, guid: b7e25f15745c21046a59ab9b00066de6, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8843968164946983565, guid: b7e25f15745c21046a59ab9b00066de6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -744,8 +748,48 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4025972025895140213, guid: b7e25f15745c21046a59ab9b00066de6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1757205089}
   m_SourcePrefab: {fileID: 100100000, guid: b7e25f15745c21046a59ab9b00066de6, type: 3}
+--- !u!1 &1757205088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4025972025895140213, guid: b7e25f15745c21046a59ab9b00066de6, type: 3}
+  m_PrefabInstance: {fileID: 1757205087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1757205089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757205088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484655a2ac7cfb540b489232cee550c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  area0Ingredients: []
+  area1Ingredients:
+  - {fileID: 21300000, guid: a192205dfb120654da5b3b43e89d842c, type: 3}
+  - {fileID: 21300000, guid: 7112346986e93b841af955ff460735b3, type: 3}
+  area2Ingredients:
+  - {fileID: 21300000, guid: d5139fec709e6294081e6c4d3f0146e5, type: 3}
+  - {fileID: 21300000, guid: 51a9f6808d19b1f41abbbf38907d9d0e, type: 3}
+  - {fileID: 21300000, guid: 412eca0eff8375443877734de32d6410, type: 3}
+  area3Ingredients:
+  - {fileID: 21300000, guid: d5139fec709e6294081e6c4d3f0146e5, type: 3}
+  - {fileID: 21300000, guid: 8f1475a7ea7ccf24dada3b88166262d9, type: 3}
+  - {fileID: 21300000, guid: 45a98955fa8cae34fa3a94c7e702c893, type: 3}
+  - {fileID: 21300000, guid: 7112346986e93b841af955ff460735b3, type: 3}
+  areaSprites:
+  - {fileID: 21300000, guid: 56a6fc72632e2964283bb50f109c630f, type: 3}
+  - {fileID: 21300000, guid: c0246a592c0ead444a45deb13f954346, type: 3}
+  - {fileID: 21300000, guid: 41e99fba6ef6ddd4ea8c5e6a8f239d3f, type: 3}
+  - {fileID: 21300000, guid: df0ebab2c3229bc428a2562d17c108e5, type: 3}
+  area: 0
+  soup: {fileID: 0}
 --- !u!1 &2024805107
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,7 +887,7 @@ RectTransform:
   - {fileID: 1566378597}
   - {fileID: 1741608851}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "RockyStart---Soup_For_The_Soul.sln"
+    "dotnet.defaultSolution": "Soup-for-the-Soul.sln"
 }

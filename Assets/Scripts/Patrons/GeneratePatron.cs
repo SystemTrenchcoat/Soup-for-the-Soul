@@ -13,16 +13,16 @@ public class GeneratePatron : MonoBehaviour
     public SpriteRenderer soup;
 
 
-    void Start()
+    /*void Start()
     {
-        renderer.enabled = true;
+        GetComponent<Renderer>().enabled = true;
         MakeCustomer();
     }
 
     void MakeCustomer()
     {
         int i = Random.Range(0,sprites.Length);
-        renderer.sprite = sprites[i];
+        GetComponent<Renderer>().sprite = sprites[i];
     }
 
     void GetOrder()
@@ -51,6 +51,6 @@ public class GeneratePatron : MonoBehaviour
         }
 
 
-    }
+    }*/
 
 }

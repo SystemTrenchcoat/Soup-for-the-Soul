@@ -3007,7 +3007,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1316222406}
-  - component: {fileID: 1316222405}
   - component: {fileID: 1316222404}
   - component: {fileID: 1316222407}
   - component: {fileID: 1316222408}
@@ -3063,18 +3062,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1316222405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316222403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da94819c63f5830408c4f00eb23d0a5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1316222406
 Transform:
   m_ObjectHideFlags: 0
@@ -3126,9 +3113,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1316222403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 484655a2ac7cfb540b489232cee550c8, type: 3}
+  m_Script: {fileID: 11500000, guid: da94819c63f5830408c4f00eb23d0a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Image1: {fileID: 2800000, guid: 2cda8ea1dfecffb41bc8f65434a7e42b, type: 3}
+  Image2: {fileID: 2800000, guid: e4159b2c24db88d429890146dea8a2d8, type: 3}
+  CursorMode: 0
+  hotspot: {x: 0, y: 0}
 --- !u!1 &1333938565
 GameObject:
   m_ObjectHideFlags: 0

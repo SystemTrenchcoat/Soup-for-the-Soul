@@ -22,7 +22,7 @@ public class CursorControl : MonoBehaviour
         //GameObject.FindGameObjectWithTag("Soup").SetActive(false);
     }
 
-    
+
 
     // Update is called once per frame
     void Update()
@@ -33,13 +33,14 @@ public class CursorControl : MonoBehaviour
         {
             Cursor.SetCursor(Image2, hotspot, CursorMode);
             //Debug.Log("Yes");
-        }else
-        { 
+        }
+        else
+        {
             Cursor.SetCursor(Image1, hotspot, CursorMode);
             //Debug.Log("no");
         }
 
-        transform.localPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //transform.localPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     //private void OnCollisionStay2D(Collision2D collision)

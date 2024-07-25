@@ -13,21 +13,15 @@ public class Patron : MonoBehaviour
     
     [SerializeField] string name;
     [SerializeField] Food order;
-    [SerializeField] private List<Food> foodList;
     [SerializeField] private List<Sprite> spriteList;
     private Image renderer;
     private bool isServed;
 
+    //PROPERTIES
     public string Name {get; set;}
     public Food Order {get; set;}
-
     public string OrderName {get {return order.Name;}}
-    public Sprite OrderPic {get {return order.FoodImage;}}
 
-    /// <summary>
-    /// Start is called on the frame when a script is enabled just before
-    /// any of the Update methods is called the first time.
-    /// </summary>
     private void Start()
     {
         renderer = GetComponent<Image>();
@@ -38,11 +32,11 @@ public class Patron : MonoBehaviour
     }
     public void GeneratePatron() 
     {
-        int i = Random.Range(0, foodList.Count - 1);
-        order = foodList[i];
-        
+        //Generating random number for Patron's sprite (will move this to a GameManager later)
         int j = Random.Range(0, spriteList.Count - 1);
         renderer.sprite = spriteList[j];
+
+        
     }
 }
 

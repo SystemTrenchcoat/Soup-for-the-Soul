@@ -503,7 +503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566533451}
-  - component: {fileID: 1566533450}
+  - component: {fileID: 1566533452}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -511,18 +511,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1566533450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566533449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1b478794b1898547b5c5b32c717a21f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1566533451
 Transform:
   m_ObjectHideFlags: 0
@@ -538,6 +526,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1566533452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566533449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b478794b1898547b5c5b32c717a21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1741608850
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,9 +623,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1566533450}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: OnButtonPress
+      - m_Target: {fileID: 1566533452}
+        m_TargetAssemblyTypeName: Startgame, Assembly-CSharp
+        m_MethodName: Begin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -770,26 +770,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484655a2ac7cfb540b489232cee550c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area0Ingredients: []
-  area1Ingredients:
-  - {fileID: 21300000, guid: a192205dfb120654da5b3b43e89d842c, type: 3}
-  - {fileID: 21300000, guid: 7112346986e93b841af955ff460735b3, type: 3}
-  area2Ingredients:
-  - {fileID: 21300000, guid: d5139fec709e6294081e6c4d3f0146e5, type: 3}
-  - {fileID: 21300000, guid: 51a9f6808d19b1f41abbbf38907d9d0e, type: 3}
-  - {fileID: 21300000, guid: 412eca0eff8375443877734de32d6410, type: 3}
-  area3Ingredients:
-  - {fileID: 21300000, guid: d5139fec709e6294081e6c4d3f0146e5, type: 3}
-  - {fileID: 21300000, guid: 8f1475a7ea7ccf24dada3b88166262d9, type: 3}
-  - {fileID: 21300000, guid: 45a98955fa8cae34fa3a94c7e702c893, type: 3}
-  - {fileID: 21300000, guid: 7112346986e93b841af955ff460735b3, type: 3}
-  areaSprites:
-  - {fileID: 21300000, guid: 56a6fc72632e2964283bb50f109c630f, type: 3}
-  - {fileID: 21300000, guid: c0246a592c0ead444a45deb13f954346, type: 3}
-  - {fileID: 21300000, guid: 41e99fba6ef6ddd4ea8c5e6a8f239d3f, type: 3}
-  - {fileID: 21300000, guid: df0ebab2c3229bc428a2562d17c108e5, type: 3}
-  area: 0
-  soup: {fileID: 0}
 --- !u!1 &2024805107
 GameObject:
   m_ObjectHideFlags: 0

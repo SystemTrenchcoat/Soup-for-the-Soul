@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartGame : MonoBehaviour
+public class Startgame : MonoBehaviour
 {
-    public static int n;
-    public void OnButtonPress()
+    public static int i;
+
+    public void Begin()
     {
-        if (n == 0)
+        if (i == 0)
         {
             SceneManager.LoadScene("Tutorial Scene");
             Debug.Log("Button Pressed");
-            n++;
-            Debug.Log(n);
+            i++;
+            Debug.Log(i);
         }
         else
         {

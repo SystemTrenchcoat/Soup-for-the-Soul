@@ -1579,7 +1579,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 935254880}
         m_TargetAssemblyTypeName: ReturnToLevelSelect, Assembly-CSharp
-        m_MethodName: backtoselect
+        m_MethodName: OnButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2991,10 +2991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da94819c63f5830408c4f00eb23d0a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Image1: {fileID: 2800000, guid: fc0b29dae069ad842af59f548be7f57a, type: 3}
-  Image2: {fileID: 2800000, guid: 55db42be92a35454da609c14cb8656c8, type: 3}
-  CursorMode: 0
-  hotspot: {x: 900, y: 1000}
 --- !u!4 &1316222406
 Transform:
   m_ObjectHideFlags: 0
@@ -3049,22 +3045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484655a2ac7cfb540b489232cee550c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area0Ingredients: []
-  area1Ingredients:
-  - {fileID: 21300000, guid: a192205dfb120654da5b3b43e89d842c, type: 3}
-  - {fileID: 21300000, guid: 7112346986e93b841af955ff460735b3, type: 3}
-  area2Ingredients:
-  - {fileID: 21300000, guid: d5139fec709e6294081e6c4d3f0146e5, type: 3}
-  - {fileID: 21300000, guid: 51a9f6808d19b1f41abbbf38907d9d0e, type: 3}
-  - {fileID: 21300000, guid: 412eca0eff8375443877734de32d6410, type: 3}
-  area3Ingredients:
-  - {fileID: 21300000, guid: d5139fec709e6294081e6c4d3f0146e5, type: 3}
-  - {fileID: 21300000, guid: 8f1475a7ea7ccf24dada3b88166262d9, type: 3}
-  - {fileID: 21300000, guid: 45a98955fa8cae34fa3a94c7e702c893, type: 3}
-  - {fileID: 21300000, guid: 7112346986e93b841af955ff460735b3, type: 3}
-  areaSprites: []
-  area: 0
-  soup: {fileID: 0}
 --- !u!1 &1333938565
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,16 +3077,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f74c9f9b8b45f47b29f00a80bc59ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bowl: {fileID: 21300000, guid: 0b92dd37354711f439ebc4c186a4fb09, type: 3}
-  FilledBowl: {fileID: 21300000, guid: be0a6205cd116af4a9dc601aef245b69, type: 3}
-  bowl: 0
-  broth: 0
-  ingredients: []
-  ingredientList:
-  - {fileID: 927122601}
-  - {fileID: 1085893456}
-  - {fileID: 1263768172}
-  - {fileID: 717094066}
 --- !u!61 &1333938567
 BoxCollider2D:
   m_ObjectHideFlags: 0

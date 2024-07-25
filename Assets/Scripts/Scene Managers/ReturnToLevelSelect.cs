@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ReturnToLevelSelect : MonoBehaviour
 {
-    public void backtoselect()
+    public void OnButtonPress()
     {
-        SceneManager.LoadScene("AreaSelect");
+         SceneManager.LoadScene("AreaSelect");
     }
 }

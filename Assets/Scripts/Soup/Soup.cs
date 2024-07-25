@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
+//using static UnityEditor;
 
 public class Soup : MonoBehaviour
 {
@@ -55,7 +55,7 @@ public class Soup : MonoBehaviour
             item.GetComponent<SpriteRenderer>().enabled = false;
         }
 
-        GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().changeIngredients();
+        //GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().changeIngredients();
     }
 
     // Update is called once per frame

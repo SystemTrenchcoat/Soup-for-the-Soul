@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Holds a list of each ingredient and will generate lists that each Patron will want
 public class IngredientManager : MonoBehaviour
 {
     [SerializeField] List<Ingredients> ingredientList = new List<Ingredients>();

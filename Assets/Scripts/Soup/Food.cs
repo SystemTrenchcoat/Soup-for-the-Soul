@@ -13,6 +13,12 @@ public class Food : MonoBehaviour
     */
     [SerializeField] private string name;
     [SerializeField] private Ingredients[] recipe; //The ingredients in the pot has to match these!
+    private IngredientManager ingredientManager;
+
+    public void Start() 
+    {
+        ingredientManager = FindAnyObjectByType<IngredientManager>();
+    }
 
     public string Name {get {return name;} set {name = value;} }
     public Ingredients[] Recipe {get {return recipe;} set {recipe = value;} }
@@ -20,7 +26,7 @@ public class Food : MonoBehaviour
     //Constructor
     public Food() 
     {
-        
+        recipe = ingredientManager.GenerateIngredientArray();
     }
 }
 

@@ -27,7 +27,6 @@ public class InputHandler : MonoBehaviour
     if(rayHit.collider.gameObject.GetComponent<Patron>() != null) {
         orderInfo.gameObject.SetActive(true);
         orderName.text = rayHit.collider.gameObject.GetComponent<Patron>().OrderName;
-        foodPic.GetComponent<Image>().sprite = rayHit.collider.gameObject.GetComponent<Patron>().OrderPic;
 
         }
     }

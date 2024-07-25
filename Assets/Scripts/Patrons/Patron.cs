@@ -36,7 +36,7 @@ public class Patron : MonoBehaviour
         int j = Random.Range(0, spriteList.Count - 1);
         renderer.sprite = spriteList[j];
 
-        
+        order = new Food();
     }
 }
 

@@ -10,7 +10,6 @@ public class InputHandler : MonoBehaviour
     private Camera mainCamera;
     public Image orderInfo;
     [SerializeField] TMP_Text orderName;
-    [SerializeField] Image foodPic;
 
     private void Awake() {
         mainCamera = Camera.main;
@@ -25,9 +24,9 @@ public class InputHandler : MonoBehaviour
         Debug.Log(rayHit.collider.gameObject.name);
 
     if(rayHit.collider.gameObject.GetComponent<Patron>() != null) {
-        orderInfo.gameObject.SetActive(true);
-        orderName.text = rayHit.collider.gameObject.GetComponent<Patron>().OrderName;
-
+        Debug.Log("You've clicked this!");
+        //orderInfo.gameObject.SetActive(true);
+        // orderName.text = rayHit.collider.gameObject.GetComponent<Patron>().OrderName;
         }
     }
 
@@ -42,6 +41,7 @@ public class InputHandler : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0) && rayHit.collider.gameObject.CompareTag("Ingredient")) 
         {
+            Debug.Log("You're holding down onto this!");
             rayHit.collider.gameObject.transform.position = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         }
 

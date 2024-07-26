@@ -3152,9 +3152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f74c9f9b8b45f47b29f00a80bc59ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bowl: {fileID: 0}
-  FilledBowl: {fileID: 0}
-  ingredientList: []
+  Bowl: {fileID: 21300000, guid: 0b92dd37354711f439ebc4c186a4fb09, type: 3}
+  FilledBowl: {fileID: 21300000, guid: be0a6205cd116af4a9dc601aef245b69, type: 3}
+  ingredientList:
+  - {fileID: 927122601}
+  - {fileID: 1085893456}
+  - {fileID: 1263768172}
+  - {fileID: 717094066}
 --- !u!61 &1333938567
 BoxCollider2D:
   m_ObjectHideFlags: 0

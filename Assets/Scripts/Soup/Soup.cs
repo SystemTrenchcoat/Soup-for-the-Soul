@@ -55,7 +55,7 @@ public class Soup : MonoBehaviour
             item.GetComponent<SpriteRenderer>().enabled = false;
         }
 
-        //GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().changeIngredients();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().changeIngredients();
     }
 
     // Update is called once per frame

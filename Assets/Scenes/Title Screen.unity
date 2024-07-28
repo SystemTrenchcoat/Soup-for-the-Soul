@@ -801,6 +801,7 @@ GameObject:
   - component: {fileID: 2044834534}
   - component: {fileID: 2044834533}
   - component: {fileID: 2044834532}
+  - component: {fileID: 2044834536}
   m_Layer: 0
   m_Name: CursorController
   m_TagString: Player
@@ -911,3 +912,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2044834536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044834531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b84b55dfb516647ad8d953fa85c3b311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  area0Ingredients: []
+  area1Ingredients:
+  - {fileID: 21300000, guid: a192205dfb120654da5b3b43e89d842c, type: 3}
+  - {fileID: 21300000, guid: 7112346986e93b841af955ff460735b3, type: 3}
+  area2Ingredients:
+  - {fileID: 21300000, guid: d5139fec709e6294081e6c4d3f0146e5, type: 3}
+  - {fileID: 21300000, guid: 51a9f6808d19b1f41abbbf38907d9d0e, type: 3}
+  - {fileID: 21300000, guid: 412eca0eff8375443877734de32d6410, type: 3}
+  area3Ingredients:
+  - {fileID: 21300000, guid: d5139fec709e6294081e6c4d3f0146e5, type: 3}
+  - {fileID: 21300000, guid: 8f1475a7ea7ccf24dada3b88166262d9, type: 3}
+  - {fileID: 21300000, guid: 45a98955fa8cae34fa3a94c7e702c893, type: 3}
+  - {fileID: 21300000, guid: 7112346986e93b841af955ff460735b3, type: 3}
+  areaSprites:
+  - {fileID: 21300000, guid: c0246a592c0ead444a45deb13f954346, type: 3}
+  - {fileID: 21300000, guid: 41e99fba6ef6ddd4ea8c5e6a8f239d3f, type: 3}
+  - {fileID: 21300000, guid: df0ebab2c3229bc428a2562d17c108e5, type: 3}
+  area: 0
+  soup: {fileID: 0}

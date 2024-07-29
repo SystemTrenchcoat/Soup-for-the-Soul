@@ -1127,11 +1127,11 @@ MonoBehaviour:
     dialogueText: All that you have to do is take the customers' orders, make the
       soup, and serve them up!
   - characterName: Miso
-    dialogueText: Making soup is as easy  as clicking and dragging the ingredients
-      that you need for a specific kind of soup into the big pot in the middle...
+    dialogueText: Making soup is as easy as tapping the ingredients that you need
+      for a specific kind of soup into the big pot in the middle...
   - characterName: Miso
-    dialogueText: Next, clicking and dragging the ladle to one of the little black
-      bowls pour the soup in...
+    dialogueText: Next, tapping the ladle in the pot to serve some soup into one
+      of the little black bowls...
   - characterName: Miso
     dialogueText: And then serving the soup bowls to the customers!
   - characterName: Miso

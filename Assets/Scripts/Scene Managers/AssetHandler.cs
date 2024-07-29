@@ -11,6 +11,8 @@ public class AssetHandler : MonoBehaviour
 
     public List<Sprite> areaSprites = new List<Sprite>();
 
+    public List<float> areaTimer = new List<float>();
+
     public int area = 0;
 
     //public Soup soup = null;

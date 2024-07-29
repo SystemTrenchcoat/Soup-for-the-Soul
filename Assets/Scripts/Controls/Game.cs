@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
-    public int popularity = 0;
+    public double popularity = 0;
+    public float levelTimer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -12,8 +14,10 @@ public class Game : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        levelTimer -= Time.deltaTime;
+
+
     }
 }

@@ -802,6 +802,7 @@ GameObject:
   - component: {fileID: 2044834533}
   - component: {fileID: 2044834532}
   - component: {fileID: 2044834536}
+  - component: {fileID: 2044834537}
   m_Layer: 0
   m_Name: CursorController
   m_TagString: Player
@@ -943,3 +944,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: df0ebab2c3229bc428a2562d17c108e5, type: 3}
   area: 0
   soup: {fileID: 0}
+--- !u!114 &2044834537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044834531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce64fe9989898044add4423acf2c67c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popularity: 0

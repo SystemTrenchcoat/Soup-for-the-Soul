@@ -13,7 +13,7 @@ public class AssetHandler : MonoBehaviour
 
     public int area = 0;
 
-    public Soup soup = null;
+    //public Soup soup = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +24,35 @@ public class AssetHandler : MonoBehaviour
         //}
     }
 
-    public void changeIngredients()
+    public int levelIngredientCount()
     {
-        if (GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>() != null)
+        int count = 0;
+
+        switch (area)
         {
-            soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
+            case 0:
+                count = area0Ingredients.Count;
+                break;
+            case 1:
+                count = area1Ingredients.Count;
+                break;
+            case 2:
+                count = area2Ingredients.Count;
+                break;
+            case 3:
+                count = area3Ingredients.Count;
+                break;
         }
+
+        return count;
+    }
+
+    public void changeIngredients(List<GameObject> ingredientList)
+    {
+        //if (GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>() != null)
+        //{
+        //    soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
+        //}
 
         if (area < areaSprites.Count)
         {
@@ -40,29 +63,29 @@ public class AssetHandler : MonoBehaviour
         switch(area)
         {
             case 0:
-                ingredients = area0Ingredients;
-                break;
-            case 1:
                 ingredients = area1Ingredients;
                 break;
-            case 2:
+            case 1:
                 ingredients = area2Ingredients;
                 break;
-            case 3:
+            case 2:
                 ingredients = area3Ingredients;
+                break;
+            case 3:
+                ingredients = area0Ingredients;
                 break;
         }
 
-        foreach (var v in soup.ingredientList)
+        foreach (var v in ingredientList)
         {
-            v.gameObject.GetComponent<SpriteRenderer>().sprite = null;
+            v.GetComponent<SpriteRenderer>().sprite = null;
         }
 
         if (ingredients != null)
         {
             for (int i = 0; i < ingredients.Count; i++)
             {
-                soup.ingredientList[i].gameObject.GetComponent<SpriteRenderer>().sprite = ingredients[i];
+                ingredientList[i].gameObject.GetComponent<SpriteRenderer>().sprite = ingredients[i];
             }
         }
     }

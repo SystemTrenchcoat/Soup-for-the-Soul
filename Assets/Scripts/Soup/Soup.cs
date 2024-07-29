@@ -9,9 +9,9 @@ public class Soup : MonoBehaviour
     public Sprite Bowl;
     public Sprite FilledBowl;
 
-    private bool bowl = false;
-    private bool broth = false;
-    private List<bool> ingredients = new List<bool>();
+    public bool bowl = false;
+    public bool broth = false;
+    public bool[] ingredients = new bool[4];
     public List<GameObject> ingredientList = new List<GameObject>();
 
     public void addBowl()
@@ -55,7 +55,7 @@ public class Soup : MonoBehaviour
             item.GetComponent<SpriteRenderer>().enabled = false;
         }
 
-        GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().changeIngredients();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().changeIngredients(ingredientList);
     }
 
     // Update is called once per frame

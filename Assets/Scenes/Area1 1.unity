@@ -4164,13 +4164,15 @@ GameObject:
   - component: {fileID: 1316222404}
   - component: {fileID: 1316222407}
   - component: {fileID: 1316222408}
+  - component: {fileID: 1316222409}
+  - component: {fileID: 1316222410}
   m_Layer: 0
   m_Name: CursorController
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1316222404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4274,6 +4276,39 @@ MonoBehaviour:
   Image2: {fileID: 2800000, guid: e4159b2c24db88d429890146dea8a2d8, type: 3}
   CursorMode: 0
   hotspot: {x: 0, y: 0}
+--- !u!114 &1316222409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316222403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b84b55dfb516647ad8d953fa85c3b311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  area0Ingredients: []
+  area1Ingredients: []
+  area2Ingredients: []
+  area3Ingredients: []
+  areaSprites: []
+  areaTimer: []
+  area: 0
+--- !u!114 &1316222410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316222403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce64fe9989898044add4423acf2c67c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popularity: 0
+  levelTimer: 0
 --- !u!1 &1333938565
 GameObject:
   m_ObjectHideFlags: 0

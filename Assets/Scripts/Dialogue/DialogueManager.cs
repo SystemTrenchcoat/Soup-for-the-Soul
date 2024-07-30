@@ -6,6 +6,7 @@ public class DialogueLine
 {
     public string characterName;
     public string dialogueText;
+    public AudioClip[] soundEffects; // Array of AudioClips for random sound effects
 }
 
 public class DialogueManager : MonoBehaviour
@@ -15,8 +16,13 @@ public class DialogueManager : MonoBehaviour
     public DialogueLine[] dialogueLines; // Populate this with your dialogue lines in the inspector
     private int currentLine = 0;
 
+    private AudioSource audioSource; // AudioSource to play sound effects
+
     void Start()
     {
+        // Add an AudioSource component if not already present
+        audioSource = gameObject.AddComponent<AudioSource>();
+
         if (dialogueLines.Length > 0)
         {
             DisplayCurrentLine();
@@ -57,5 +63,13 @@ public class DialogueManager : MonoBehaviour
     {
         nameText.text = dialogueLines[currentLine].characterName;
         dialogueText.text = dialogueLines[currentLine].dialogueText;
+
+        // Play a random sound effect for the current line
+        if (dialogueLines[currentLine].soundEffects.Length > 0)
+        {
+            AudioClip randomClip = dialogueLines[currentLine].soundEffects[Random.Range(0, dialogueLines[currentLine].soundEffects.Length)];
+            audioSource.clip = randomClip;
+            audioSource.Play();
+        }
     }
 }

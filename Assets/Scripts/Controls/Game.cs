@@ -17,7 +17,5 @@ public class Game : MonoBehaviour
     void FixedUpdate()
     {
         levelTimer -= Time.deltaTime;
-
-
     }
 }

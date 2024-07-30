@@ -40,6 +40,11 @@ public class CursorControl : MonoBehaviour
             //Debug.Log("no");
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Screen.fullScreen = !Screen.fullScreen;
+        }
+
         //transform.localPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 

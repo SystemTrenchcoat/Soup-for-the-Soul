@@ -64,7 +64,7 @@ public class Patron : MonoBehaviour
     {
         double timeMod = Mathf.Round(timerConstant / 3);
 
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Game>().popularity += CheckOrder() * timeMod;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Game>().points += CheckOrder() * timeMod;
         soup.giveSoup();
         GeneratePatron();
     }

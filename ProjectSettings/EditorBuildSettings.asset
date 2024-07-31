@@ -18,6 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Area1 1.unity
     guid: af623881ca0f27d46b4aefa488921c2c
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scenes/AreaSelect.unity
+    guid: 7551190a67dc95a479862d986f47aeb4
+=======
     path: Assets/Scenes/Point System.unity
     guid: 1348c9ed188c18642ae76860649d51fe
+>>>>>>> 4b383c35217fa80bc9b9990a367de901b215e7b2
   m_configObjects: {}

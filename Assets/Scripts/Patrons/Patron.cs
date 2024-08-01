@@ -7,6 +7,8 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Unity.VisualScripting;
 using TMPro;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class Patron : MonoBehaviour
 {
@@ -23,6 +25,7 @@ public class Patron : MonoBehaviour
     private float timerConstant = 30f;
 
     public bool[] ingredients = new bool[4];
+    public List<Sprite> sprites = new List<Sprite>();
     SpriteManager spriteManager;
 
     //PROPERTIES
@@ -52,9 +55,10 @@ public class Patron : MonoBehaviour
     public void GenerateOrder()
     {
         int max = GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().levelIngredientCount();
-        for(int i = 0; i < maxIngredients; i++)
+        Debug.Log(max);
+        for (int i = 0; i < maxIngredients; i++)
         {
-            int sel = Random.Range(0, max + 1);
+            int sel = Random.Range(0, max);// + 1);
             order[sel].GetComponent<SpriteRenderer>().enabled = true;
             ingredients[sel] = true;
         }
@@ -92,11 +96,25 @@ public class Patron : MonoBehaviour
     public void GeneratePatron() 
     {
         //Generating random number for Patron's sprite (will move this to a GameManager later)
-        Sprite newSprite = spriteManager.instance.GenerateSprite();
-        renderer.sprite = newSprite;
+        int j = Random.Range(0, sprites.Count);
+
+        foreach(GameObject go in GameObject.FindGameObjectsWithTag("Patron"))
+        {
+            if (go != this)
+            {
+                do
+                {
+                    j = Random.Range(0, sprites.Count);
+                } while (go.GetComponent<Image>().sprite == sprites[j]);
+            }
+        }
+
+        GetComponent<Image>().sprite = sprites[j];
+        Debug.Log("Generate");
 
         foreach (GameObject go in order)
         {
+            Debug.Log(go.name);
             go.GetComponent<SpriteRenderer>().enabled = false;
         }
 

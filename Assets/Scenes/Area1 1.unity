@@ -1147,7 +1147,7 @@ GameObject:
   - component: {fileID: 544729703}
   m_Layer: 5
   m_Name: Patron 3
-  m_TagString: Untagged
+  m_TagString: Patron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1289,6 +1289,15 @@ MonoBehaviour:
   - {fileID: 1578004933}
   - {fileID: 1117585889}
   ingredients: 00000000
+  sprites:
+  - {fileID: 21300000, guid: 7008c369695304ebfa5f3f571f167c75, type: 3}
+  - {fileID: 21300000, guid: 2af332e400dc94d68ba9ff9659e79909, type: 3}
+  - {fileID: 21300000, guid: 77f90921b2c6d4f389525558e83cdbeb, type: 3}
+  - {fileID: 21300000, guid: 3539ddafeafae4732bd26793538551c7, type: 3}
+  - {fileID: 21300000, guid: 99fd1b3aa0e6e43f4b2798b7415683ec, type: 3}
+  - {fileID: 21300000, guid: 7591383e5f912459ea09fc2fd75224f6, type: 3}
+  - {fileID: 21300000, guid: d63d5bde5864e41b7bb7245e25b11b4a, type: 3}
+  - {fileID: 21300000, guid: 0a4aa4b310985471bb71b1b5ead76828, type: 3}
 --- !u!1 &568899613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,7 +2974,7 @@ GameObject:
   - component: {fileID: 1054040765}
   m_Layer: 5
   m_Name: Patron 1
-  m_TagString: Untagged
+  m_TagString: Patron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3107,6 +3116,15 @@ MonoBehaviour:
   - {fileID: 632586760}
   - {fileID: 749537821}
   ingredients: 00000000
+  sprites:
+  - {fileID: 21300000, guid: 7008c369695304ebfa5f3f571f167c75, type: 3}
+  - {fileID: 21300000, guid: 2af332e400dc94d68ba9ff9659e79909, type: 3}
+  - {fileID: 21300000, guid: 77f90921b2c6d4f389525558e83cdbeb, type: 3}
+  - {fileID: 21300000, guid: 3539ddafeafae4732bd26793538551c7, type: 3}
+  - {fileID: 21300000, guid: 99fd1b3aa0e6e43f4b2798b7415683ec, type: 3}
+  - {fileID: 21300000, guid: 7591383e5f912459ea09fc2fd75224f6, type: 3}
+  - {fileID: 21300000, guid: d63d5bde5864e41b7bb7245e25b11b4a, type: 3}
+  - {fileID: 21300000, guid: 0a4aa4b310985471bb71b1b5ead76828, type: 3}
 --- !u!1 &1085893456
 GameObject:
   m_ObjectHideFlags: 0
@@ -4675,7 +4693,7 @@ GameObject:
   - component: {fileID: 1345636470}
   m_Layer: 5
   m_Name: Patron 2
-  m_TagString: Untagged
+  m_TagString: Patron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4817,6 +4835,15 @@ MonoBehaviour:
   - {fileID: 1790731661}
   - {fileID: 1192342771}
   ingredients: 00000000
+  sprites:
+  - {fileID: 21300000, guid: 7008c369695304ebfa5f3f571f167c75, type: 3}
+  - {fileID: 21300000, guid: 2af332e400dc94d68ba9ff9659e79909, type: 3}
+  - {fileID: 21300000, guid: 77f90921b2c6d4f389525558e83cdbeb, type: 3}
+  - {fileID: 21300000, guid: 3539ddafeafae4732bd26793538551c7, type: 3}
+  - {fileID: 21300000, guid: 99fd1b3aa0e6e43f4b2798b7415683ec, type: 3}
+  - {fileID: 21300000, guid: 7591383e5f912459ea09fc2fd75224f6, type: 3}
+  - {fileID: 21300000, guid: d63d5bde5864e41b7bb7245e25b11b4a, type: 3}
+  - {fileID: 21300000, guid: 0a4aa4b310985471bb71b1b5ead76828, type: 3}
 --- !u!1 &1429746962
 GameObject:
   m_ObjectHideFlags: 0

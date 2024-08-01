@@ -25,11 +25,11 @@ public class Game : MonoBehaviour
             //Debug.Log(levelTimer);
             //Debug.Log(name);
 
-            //if (levelTimer < 0)
-            //{
-            //    Debug.Log("Leave");
-            //    SceneManager.LoadScene("AreaSelect");//"Point System");
-            //}
+            if (levelTimer < 0)
+            {
+                Debug.Log("Leave");
+                SceneManager.LoadScene("AreaSelect");//"Point System");
+            }
         }
     }
 }

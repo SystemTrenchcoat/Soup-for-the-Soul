@@ -33,16 +33,16 @@ public class AssetHandler : MonoBehaviour
         switch (area)
         {
             case 0:
-                count = area0Ingredients.Count;
-                break;
-            case 1:
                 count = area1Ingredients.Count;
                 break;
-            case 2:
+            case 1:
                 count = area2Ingredients.Count;
                 break;
-            case 3:
+            case 2:
                 count = area3Ingredients.Count;
+                break;
+            case 3:
+                count = area0Ingredients.Count;
                 break;
         }
 

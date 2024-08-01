@@ -18,11 +18,18 @@ public class Game : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        levelTimer -= Time.deltaTime;
-
-        if (levelTimer <= 0)
+        if (SceneManager.GetActiveScene().name == "Area1 1")
         {
-            SceneManager.LoadScene("AreaSelect");//"Point System");
+            levelTimer -= Time.deltaTime;
+            Debug.Log(Time.deltaTime);
+            Debug.Log(levelTimer);
+            Debug.Log(name);
+
+            //if (levelTimer < 0)
+            //{
+            //    Debug.Log("Leave");
+            //    SceneManager.LoadScene("AreaSelect");//"Point System");
+            //}
         }
     }
 }

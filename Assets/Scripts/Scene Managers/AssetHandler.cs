@@ -66,15 +66,19 @@ public class AssetHandler : MonoBehaviour
         {
             case 0:
                 ingredients = area1Ingredients;
+                GetComponent<Game>().levelTimer = areaTimer[0];
                 break;
             case 1:
                 ingredients = area2Ingredients;
+                GetComponent<Game>().levelTimer = areaTimer[1];
                 break;
             case 2:
                 ingredients = area3Ingredients;
+                GetComponent<Game>().levelTimer = areaTimer[2];
                 break;
             case 3:
                 ingredients = area0Ingredients;
+                GetComponent<Game>().levelTimer = areaTimer[3];
                 break;
         }
 

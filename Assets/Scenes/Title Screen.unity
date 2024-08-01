@@ -1012,4 +1012,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popularity: 0
   points: 0
-  levelTimer: 0
+  levelTimer: 90

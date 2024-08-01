@@ -88,6 +88,7 @@ public class Patron : MonoBehaviour
 
         return score;
     }
+    
     public void GeneratePatron() 
     {
         //Generating random number for Patron's sprite (will move this to a GameManager later)

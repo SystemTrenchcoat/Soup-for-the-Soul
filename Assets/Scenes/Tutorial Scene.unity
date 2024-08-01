@@ -339,8 +339,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Finish Tutorial
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -655,8 +655,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da94819c63f5830408c4f00eb23d0a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Image1: {fileID: 2800000, guid: 2cda8ea1dfecffb41bc8f65434a7e42b, type: 3}
-  Image2: {fileID: 2800000, guid: e4159b2c24db88d429890146dea8a2d8, type: 3}
+  Image1: {fileID: 2800000, guid: fc0b29dae069ad842af59f548be7f57a, type: 3}
+  Image2: {fileID: 2800000, guid: 55db42be92a35454da609c14cb8656c8, type: 3}
   CursorMode: 0
   hotspot: {x: 0, y: 0}
 --- !u!50 &981628087

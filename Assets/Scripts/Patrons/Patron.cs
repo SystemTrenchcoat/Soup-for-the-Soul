@@ -35,7 +35,7 @@ public class Patron : MonoBehaviour
 
     private void Start()
     {
-        spriteM = SpriteManager.instance;
+        spriteManager = SpriteManager.instance;
         renderer = GetComponent<Image>();
         soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
         GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().changeIngredients(order);

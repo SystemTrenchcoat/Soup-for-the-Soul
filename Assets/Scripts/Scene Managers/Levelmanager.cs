@@ -26,6 +26,6 @@ public class Levelmanager : MonoBehaviour
     public void tutorial()
     {
         //GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().area = 0;
-        SceneManager.LoadScene("Area1 1");
+        SceneManager.LoadScene("Tutorial Scene");
     }
 }

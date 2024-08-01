@@ -21,9 +21,9 @@ public class Game : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Area1 1")
         {
             levelTimer -= Time.deltaTime;
-            Debug.Log(Time.deltaTime);
-            Debug.Log(levelTimer);
-            Debug.Log(name);
+            //Debug.Log(Time.deltaTime);
+            //Debug.Log(levelTimer);
+            //Debug.Log(name);
 
             if (levelTimer < 0)
             {

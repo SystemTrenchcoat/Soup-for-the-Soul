@@ -23,7 +23,7 @@ public class Patron : MonoBehaviour
     private float timerConstant = 30f;
 
     public bool[] ingredients = new bool[4];
-    SpriteManager spriteManager;
+    SpriteManager spriteM;
 
     //PROPERTIES
     //public string Name {get; set;}
@@ -32,7 +32,7 @@ public class Patron : MonoBehaviour
 
     private void Start()
     {
-        spriteManager = FindObjectOfType<SpriteManager>();
+        spriteM = SpriteManager.instance;
         renderer = GetComponent<Image>();
         soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
         GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().changeIngredients(order);
@@ -92,7 +92,7 @@ public class Patron : MonoBehaviour
     public void GeneratePatron() 
     {
         //Generating random number for Patron's sprite (will move this to a GameManager later)
-        Sprite newSprite = spriteManager.instance.GenerateSprite();
+        Sprite newSprite = spriteM.GenerateSprite();
         renderer.sprite = newSprite;
 
         foreach (GameObject go in order)

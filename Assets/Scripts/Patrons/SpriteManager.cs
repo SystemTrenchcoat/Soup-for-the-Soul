@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,13 +5,22 @@ public class SpriteManager : MonoBehaviour
 {
     //[SerializeField] allows for private variables to be seen in the inspector, good for inspe
     [SerializeField] private List<Sprite> sprites;
-    private List<Sprite> spritesCopy; //This the variable that will be modified
-    public SpriteManager instance = new SpriteManager(); //Using the Singleton pattern to make sure there is only one instance of this script
+    private List<Sprite> spritesCopy; //This is the variable that will be modified
+    public static SpriteManager instance; //Using the Singleton pattern to make sure there is only one instance of this script
 
+    //On awake, check if an instance of SpriteManager already exists
+    //If so, destroy it 
+    public void Awake() 
+    {
+        if(instance == null)
+            instance = this;
+        else
+            DestroyImmediate(gameObject);
+    }
 
     //Set the copy of the lsit to the original list
     private void Start() {
-        spritesCopy = sprites;
+        spritesCopy = new List<Sprite>(sprites);
     }
     /// <summary>
     /// Select a random sprite from the list, remove it, then return it, so there are no duplicated NPCs.
@@ -24,10 +32,16 @@ public class SpriteManager : MonoBehaviour
     {
         if(spritesCopy.Count < 3) 
         {
-            spritesCopy = sprites;
+            spritesCopy = new List<Sprite>(sprites);
         }
         int i = UnityEngine.Random.Range(0, spritesCopy.Count);
         Sprite generatedSprite = spritesCopy[i];
+
+        if(generatedSprite == null)
+        {
+            generatedSprite = spritesCopy[Random.Range(0, spritesCopy.Count)];
+        }
+
         spritesCopy.RemoveAt(i);
         Debug.Log("This has ran!");
         return generatedSprite;

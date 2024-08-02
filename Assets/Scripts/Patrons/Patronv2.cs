@@ -1,133 +1,105 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 public class Patronv2 : MonoBehaviour
 {
-    private Image renderer;
-    private Soup soup;
-    public List<GameObject> order;
-    private int maxIngredients = 3;
-    private float timer = 30f;
-    private float timerConstant = 30f;
+    // List of happy sound effects
+    public List<AudioClip> happySounds;
 
-    public bool[] ingredients = new bool[4];
-    SpriteManager spriteM;
+    // List of upset sound effects
+    public List<AudioClip> upsetSounds;
 
-    // New fields for handling sound effects
-    public PatronSoundManager soundManager;
-    private bool hasBeenServed = false;
-    private bool isServedCorrectly = false;
+    // Time threshold for patrons waiting too long (in seconds)
+    public float waitingThreshold = 120f; // 2 minutes
+
+    // Reference to the AudioSource component for playing sound effects
+    private AudioSource audioSource;
+
+    // Timer to track how long the patron has been waiting
+    private float waitTimer;
+
+    // Flag to check if the patron has been served
+    private bool isServed;
 
     private void Start()
     {
-        spriteM = SpriteManager.instance;
-        renderer = GetComponent<Image>();
-        soup = GameObject.FindGameObjectWithTag("Soup").GetComponent<Soup>();
-        GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().changeIngredients(order);
-        GeneratePatron();
+        // Ensure the AudioSource component is attached to the Patron GameObject
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource component not found. Make sure the Patron GameObject has an AudioSource component.");
+            return;
+        }
+
+        // Initialize the wait timer and isServed flag
+        waitTimer = 0f;
+        isServed = false;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        if (!hasBeenServed)
+        // Increment the wait timer if the patron hasn't been served
+        if (!isServed)
         {
-            timer -= Time.deltaTime;
+            waitTimer += Time.deltaTime;
 
-            if (timer <= 0)
+            // Check if the patron has been waiting too long
+            if (waitTimer >= waitingThreshold)
             {
                 PlayUpsetSound();
-                GeneratePatron();
+                isServed = true; // Mark as served to stop further updates
             }
         }
     }
 
-    public void GenerateOrder()
+    // Call this method when the patron is served the soup
+    public void ServePatron(bool isCorrectSoup)
     {
-        int max = GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().levelIngredientCount();
-        for (int i = 0; i < maxIngredients; i++)
+        // If the patron hasn't been served yet
+        if (!isServed)
         {
-            int sel = Random.Range(0, max + 1);
-            order[sel].GetComponent<SpriteRenderer>().enabled = true;
-            ingredients[sel] = true;
-        }
-    }
-
-    public void GiveSoup()
-    {
-        double timeMod = Mathf.Round(timerConstant / 3);
-        double pointsEarned = CheckOrder() * timeMod;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Game>().points += pointsEarned;
-        
-        isServedCorrectly = pointsEarned >= 100; // Assuming 100 points means the order is correct
-
-        soup.giveSoup();
-        PlayReactionSound();
-
-        GeneratePatron();
-    }
-
-    public double CheckOrder()
-    {
-        int score = 0;
-
-        if (soup.bowl && soup.broth)
-        {
-            score += 20;
-        }
-
-        for (int i = 0; i < ingredients.Length; i++)
-        {
-            if (ingredients[i] && soup.ingredientList[i].GetComponent<SpriteRenderer>().enabled == true)
+            // Play the appropriate sound based on whether the soup is correct
+            if (isCorrectSoup)
             {
-                score += 20;
+                PlayHappySound();
             }
-        }
+            else
+            {
+                PlayUpsetSound();
+            }
 
-        return score;
+            isServed = true; // Mark as served
+        }
     }
 
-    public void GeneratePatron()
+    // Play a random happy sound effect from the list
+    private void PlayHappySound()
     {
-        // Generating random number for Patron's sprite (will move this to a GameManager later)
-        Sprite newSprite = spriteM.GenerateSprite();
-        renderer.sprite = newSprite;
-
-        foreach (GameObject go in order)
+        if (happySounds.Count > 0)
         {
-            go.GetComponent<SpriteRenderer>().enabled = false;
-        }
-
-        for (int i = 0; i < ingredients.Length; i++)
-        {
-            ingredients[i] = false;
-        }
-
-        GenerateOrder();
-
-        timer = timerConstant;
-        hasBeenServed = false;
-    }
-
-    private void PlayReactionSound()
-    {
-        if (isServedCorrectly && timer > 0)
-        {
-            soundManager.PlayHappySound();
+            int randomIndex = Random.Range(0, happySounds.Count); // Pick a random sound
+            audioSource.clip = happySounds[randomIndex];
+            audioSource.Play();
         }
         else
         {
-            soundManager.PlayUpsetSound();
+            Debug.LogWarning("No happy sounds available in the list.");
         }
-
-        hasBeenServed = true;
     }
 
+    // Play a random upset sound effect from the list
     private void PlayUpsetSound()
     {
-        soundManager.PlayUpsetSound();
-        hasBeenServed = true;
+        if (upsetSounds.Count > 0)
+        {
+            int randomIndex = Random.Range(0, upsetSounds.Count); // Pick a random sound
+            audioSource.clip = upsetSounds[randomIndex];
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("No upset sounds available in the list.");
+        }
     }
 }

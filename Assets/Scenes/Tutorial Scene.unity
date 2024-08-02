@@ -259,11 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicClips:
-  - {fileID: 8300000, guid: ee4698befa2b0864aa872761456b003e, type: 3}
-  - {fileID: 8300000, guid: 1152420f82951e64789c4f6b438b0cbd, type: 3}
-  - {fileID: 8300000, guid: c946a26605cbdba47a375a0e63487458, type: 3}
-  - {fileID: 8300000, guid: 1c5e1553c27c43f41bac30d68bb99332, type: 3}
-  - {fileID: 8300000, guid: ca827f3553ff7b240948a9f668e3420f, type: 3}
+  - {fileID: 8300000, guid: 8e08754eca4cf9e4bada2bef913cebf6, type: 3}
 --- !u!4 &402872308
 Transform:
   m_ObjectHideFlags: 0
@@ -1173,7 +1169,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
     dialogueText: With our fancy new bus, the "Bunny Bistro", I'm going to teach
-      how to run this shop!
+      you how to run this shop!
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1199,7 +1195,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
     dialogueText: Next, tap on the pot in the middle to bring them all in and start
-      making soup...
+      making the soup...
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1225,8 +1221,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: Not only are we just to make some money to upgrade our business,
-      but also build our reputation with the community as well.
+    dialogueText: Remember, not only are we here to make some money to upgrade our
+      truck, but also build our reputation with the community as well.
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}

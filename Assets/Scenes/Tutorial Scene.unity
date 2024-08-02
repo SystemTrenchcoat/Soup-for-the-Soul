@@ -1155,7 +1155,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1482718701}
   dialogueLines:
   - characterName: Miso
-    dialogueText: Greetings, best buddy!
+    dialogueText: Greetings, friend. My name is Miso!
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1163,7 +1163,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: I'm Miso, and today the day's we're gonna end world hunger!
+    dialogueText: Our main goal today is to end world hunger by going around town
+      and serving hot delicious soup to the poor and homeless
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1171,7 +1172,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: What? How we're going to do that, you're asking?
+    dialogueText: With our fancy new bus, the "Bunny Bistro", I'm going to teach
+      how to run this shop!
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1179,7 +1181,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: Why, with The Bunny Bistro truck of course!
+    dialogueText: Otherwise, just click the "Finish Tutorial" to get started.
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1187,12 +1189,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: We're going to be serving delicious soups to all the poor and homeless
-      people.
-    soundEffects: []
-  - characterName: Miso
-    dialogueText: Making sure everyone is able to get at least one good and hot meal
-      before the day is through.
+    dialogueText: All you simply have to do is tap on the ingredients needed to make
+      a specific kind of soup...
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1200,8 +1198,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: Now don' you worry friendo, this may already sound very complicated
-      at first.
+    dialogueText: Next, tap on the pot in the middle to bring them all in and start
+      making soup...
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1209,7 +1207,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: Which is why you're extremely lucky to have me by your side!
+    dialogueText: 'Then finally, tap on the ladle to pour some of the soup into one
+      of the litlle black bowls and serve it to the customers! Simple as that! '
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1217,8 +1216,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: All that you have to do is take the customers' orders, make the
-      soup, and serve them up!
+    dialogueText: Just keep in mind; customers will become unhappy if you take too
+      long or serve them the wrong soup.
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1226,8 +1225,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: Making soup is as easy as tapping the ingredients that you need
-      for a specific kind of soup into the big pot in the middle...
+    dialogueText: Not only are we just to make some money to upgrade our business,
+      but also build our reputation with the community as well.
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1235,8 +1234,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: Next, tapping the ladle in the pot to serve some soup into one
-      of the little black bowls...
+    dialogueText: Luckily that's why I'm here! Customers can pet me if they want
+      to, and that might even leave some small tips as well.
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
@@ -1244,76 +1243,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
     - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
   - characterName: Miso
-    dialogueText: And then serving the soup bowls to the customers!
-    soundEffects:
-    - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
-    - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
-    - {fileID: 8300000, guid: 55244ab2937931a468ee94b7f98edb0e, type: 3}
-    - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
-    - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
-  - characterName: Miso
-    dialogueText: Ha ha! See, super easy!
-    soundEffects:
-    - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
-    - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
-    - {fileID: 8300000, guid: 55244ab2937931a468ee94b7f98edb0e, type: 3}
-    - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
-    - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
-  - characterName: Miso
-    dialogueText: The more customers we serve, the more money we earn and the higher
-      our reputation goes up!
-    soundEffects:
-    - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
-    - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
-    - {fileID: 8300000, guid: 55244ab2937931a468ee94b7f98edb0e, type: 3}
-    - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
-    - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
-  - characterName: Miso
-    dialogueText: With all the money that we've earned, we can use it to buy some
-      upgrades to make our work around the Bunny Bistro truck more easier.
-    soundEffects:
-    - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
-    - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
-    - {fileID: 8300000, guid: 55244ab2937931a468ee94b7f98edb0e, type: 3}
-    - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
-    - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
-  - characterName: Miso
-    dialogueText: 'With our reputation increasing, word of mouth will become to spread
-      more about us, which leads us to attracting more customers and eventually,
-      building a great community! '
-    soundEffects:
-    - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
-    - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
-    - {fileID: 8300000, guid: 55244ab2937931a468ee94b7f98edb0e, type: 3}
-    - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
-    - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
-  - characterName: Miso
-    dialogueText: And in time, we'll all be able to crush world hunger together!
-    soundEffects:
-    - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
-    - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
-    - {fileID: 8300000, guid: 55244ab2937931a468ee94b7f98edb0e, type: 3}
-    - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
-    - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
-  - characterName: Miso
-    dialogueText: Are you ready best buddy? Because I'm sure am!
-    soundEffects:
-    - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
-    - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
-    - {fileID: 8300000, guid: 55244ab2937931a468ee94b7f98edb0e, type: 3}
-    - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
-    - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
-  - characterName: Miso
-    dialogueText: Now come on, let's go end world hunger together! One soup at a
-      time!
-    soundEffects:
-    - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
-    - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}
-    - {fileID: 8300000, guid: 55244ab2937931a468ee94b7f98edb0e, type: 3}
-    - {fileID: 8300000, guid: d3155c62b680865449b30f7d126a9eef, type: 3}
-    - {fileID: 8300000, guid: 616ddc4c86d32744d9466ef91f318698, type: 3}
-  - characterName: Miso
-    dialogueText: Just click on the "Finish Tutorial" button to get started!
+    dialogueText: Now, are you ready friend? Let's go end world hunger together,
+      one soup at a time!
     soundEffects:
     - {fileID: 8300000, guid: 2280a49bcee88cd498db65209f1d6d7e, type: 3}
     - {fileID: 8300000, guid: c96e922cda874b840a0fdce482e2e055, type: 3}

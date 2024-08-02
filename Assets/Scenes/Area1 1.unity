@@ -1289,6 +1289,15 @@ MonoBehaviour:
   - {fileID: 1578004933}
   - {fileID: 1117585889}
   ingredients: 00000000
+  sprites:
+  - {fileID: 21300000, guid: 7008c369695304ebfa5f3f571f167c75, type: 3}
+  - {fileID: 21300000, guid: 2af332e400dc94d68ba9ff9659e79909, type: 3}
+  - {fileID: 21300000, guid: 77f90921b2c6d4f389525558e83cdbeb, type: 3}
+  - {fileID: 21300000, guid: 3539ddafeafae4732bd26793538551c7, type: 3}
+  - {fileID: 21300000, guid: 99fd1b3aa0e6e43f4b2798b7415683ec, type: 3}
+  - {fileID: 21300000, guid: 7591383e5f912459ea09fc2fd75224f6, type: 3}
+  - {fileID: 21300000, guid: d63d5bde5864e41b7bb7245e25b11b4a, type: 3}
+  - {fileID: 21300000, guid: 0a4aa4b310985471bb71b1b5ead76828, type: 3}
 --- !u!1 &568899613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2963,6 +2972,7 @@ GameObject:
   - component: {fileID: 1054040763}
   - component: {fileID: 1054040762}
   - component: {fileID: 1054040765}
+  - component: {fileID: 1054040766}
   m_Layer: 5
   m_Name: Patron 1
   m_TagString: Untagged
@@ -3040,9 +3050,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: b69ca94e796951b44951b073111e1e91, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 1054040766}
+        m_TargetAssemblyTypeName: Patron, Assembly-CSharp
+        m_MethodName: GiveSoup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3109,6 +3119,33 @@ MonoBehaviour:
   - {fileID: 749537821}
   ingredients: 00000000
   soundManager: {fileID: 1419278191}
+--- !u!114 &1054040766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054040760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6867c8066b8fc494499a3f078032c74e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order:
+  - {fileID: 1123742929}
+  - {fileID: 673287313}
+  - {fileID: 632586760}
+  - {fileID: 749537821}
+  ingredients: 00000000
+  sprites:
+  - {fileID: 21300000, guid: 7008c369695304ebfa5f3f571f167c75, type: 3}
+  - {fileID: 21300000, guid: 2af332e400dc94d68ba9ff9659e79909, type: 3}
+  - {fileID: 21300000, guid: 77f90921b2c6d4f389525558e83cdbeb, type: 3}
+  - {fileID: 21300000, guid: 3539ddafeafae4732bd26793538551c7, type: 3}
+  - {fileID: 21300000, guid: 99fd1b3aa0e6e43f4b2798b7415683ec, type: 3}
+  - {fileID: 21300000, guid: 7591383e5f912459ea09fc2fd75224f6, type: 3}
+  - {fileID: 21300000, guid: d63d5bde5864e41b7bb7245e25b11b4a, type: 3}
+  - {fileID: 21300000, guid: 0a4aa4b310985471bb71b1b5ead76828, type: 3}
 --- !u!1 &1085893456
 GameObject:
   m_ObjectHideFlags: 0
@@ -4209,7 +4246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1316222404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4823,6 +4860,15 @@ MonoBehaviour:
   - {fileID: 1790731661}
   - {fileID: 1192342771}
   ingredients: 00000000
+  sprites:
+  - {fileID: 21300000, guid: 7008c369695304ebfa5f3f571f167c75, type: 3}
+  - {fileID: 21300000, guid: 2af332e400dc94d68ba9ff9659e79909, type: 3}
+  - {fileID: 21300000, guid: 77f90921b2c6d4f389525558e83cdbeb, type: 3}
+  - {fileID: 21300000, guid: 3539ddafeafae4732bd26793538551c7, type: 3}
+  - {fileID: 21300000, guid: 99fd1b3aa0e6e43f4b2798b7415683ec, type: 3}
+  - {fileID: 21300000, guid: 7591383e5f912459ea09fc2fd75224f6, type: 3}
+  - {fileID: 21300000, guid: d63d5bde5864e41b7bb7245e25b11b4a, type: 3}
+  - {fileID: 21300000, guid: 0a4aa4b310985471bb71b1b5ead76828, type: 3}
 --- !u!1 &1419278189
 GameObject:
   m_ObjectHideFlags: 0

@@ -48,7 +48,7 @@ public class Patronv2 : MonoBehaviour
             if (waitTimer >= waitingThreshold)
             {
                 PlayUpsetSound();
-                isServed = true; // Mark as served to stop further updates
+                ResetPatron(); // Reset patron state
             }
         }
     }
@@ -69,7 +69,7 @@ public class Patronv2 : MonoBehaviour
                 PlayUpsetSound();
             }
 
-            isServed = true; // Mark as served
+            ResetPatron(); // Reset patron state
         }
     }
 
@@ -101,5 +101,12 @@ public class Patronv2 : MonoBehaviour
         {
             Debug.LogWarning("No upset sounds available in the list.");
         }
+    }
+
+    // Reset the patron state for the next customer
+    private void ResetPatron()
+    {
+        waitTimer = 0f;
+        isServed = false;
     }
 }

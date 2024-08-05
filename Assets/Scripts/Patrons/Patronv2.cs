@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Patronv2 : MonoBehaviour
 {
-    // List of happy sound effects
+    // List of happy and upset sound effects
     public List<AudioClip> happySounds;
-
-    // List of upset sound effects
     public List<AudioClip> upsetSounds;
 
     // Time threshold for patrons waiting too long (in seconds)
-    public float waitingThreshold = 120f; // 2 minutes
+    public float waitingThreshold = 30f; // 30 seconds
 
     // Reference to the AudioSource component for playing sound effects
     private AudioSource audioSource;
@@ -19,8 +17,8 @@ public class Patronv2 : MonoBehaviour
     // Timer to track how long the patron has been waiting
     private float waitTimer;
 
-    // Flag to check if the patron has been served
-    private bool isServed;
+    // Reference to the Patron script
+    private Patron patronScript;
 
     private void Start()
     {
@@ -32,45 +30,47 @@ public class Patronv2 : MonoBehaviour
             return;
         }
 
-        // Initialize the wait timer and isServed flag
+        // Initialize the wait timer
         waitTimer = 0f;
-        isServed = false;
+
+        // Get the Patron script
+        patronScript = GetComponent<Patron>();
+        if (patronScript == null)
+        {
+            Debug.LogError("Patron script not found. Make sure the Patron GameObject has a Patron script.");
+        }
     }
 
     private void Update()
     {
-        // Increment the wait timer if the patron hasn't been served
-        if (!isServed)
-        {
-            waitTimer += Time.deltaTime;
+        // Increment the wait timer
+        waitTimer += Time.deltaTime;
 
-            // Check if the patron has been waiting too long
-            if (waitTimer >= waitingThreshold)
-            {
-                PlayUpsetSound();
-                ResetPatron(); // Reset patron state
-            }
+        // Check if the patron has been waiting too long
+        if (waitTimer >= waitingThreshold)
+        {
+            PlayUpsetSound();
+            patronScript.GeneratePatron(); // Generate a new patron
+            waitTimer = 0f; // Reset the wait timer
         }
     }
 
-    // Call this method when the patron is served the soup
-    public void ServePatron(bool isCorrectSoup)
+    // This method should be called when the patron is served
+    public void ServePatron()
     {
-        // If the patron hasn't been served yet
-        if (!isServed)
+        double score = patronScript.CheckOrder();
+        if (score > 0)
         {
-            // Play the appropriate sound based on whether the soup is correct
-            if (isCorrectSoup)
-            {
-                PlayHappySound();
-            }
-            else
-            {
-                PlayUpsetSound();
-            }
-
-            ResetPatron(); // Reset patron state
+            PlayHappySound();
         }
+        else
+        {
+            PlayUpsetSound();
+        }
+
+        // Generate a new patron
+        patronScript.GeneratePatron();
+        waitTimer = 0f; // Reset the wait timer
     }
 
     // Play a random happy sound effect from the list
@@ -78,7 +78,7 @@ public class Patronv2 : MonoBehaviour
     {
         if (happySounds.Count > 0)
         {
-            int randomIndex = Random.Range(0, happySounds.Count); // Pick a random sound
+            int randomIndex = Random.Range(0, happySounds.Count);
             audioSource.clip = happySounds[randomIndex];
             audioSource.Play();
         }
@@ -93,7 +93,7 @@ public class Patronv2 : MonoBehaviour
     {
         if (upsetSounds.Count > 0)
         {
-            int randomIndex = Random.Range(0, upsetSounds.Count); // Pick a random sound
+            int randomIndex = Random.Range(0, upsetSounds.Count);
             audioSource.clip = upsetSounds[randomIndex];
             audioSource.Play();
         }
@@ -101,12 +101,5 @@ public class Patronv2 : MonoBehaviour
         {
             Debug.LogWarning("No upset sounds available in the list.");
         }
-    }
-
-    // Reset the patron state for the next customer
-    private void ResetPatron()
-    {
-        waitTimer = 0f;
-        isServed = false;
     }
 }

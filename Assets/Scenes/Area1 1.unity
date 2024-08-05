@@ -3389,7 +3389,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: dd10281e7fcb9e343a7a3b308c2ccbaf, type: 3}
   - {fileID: 8300000, guid: 23f32d17d2222df499f7fd63bd84b928, type: 3}
   - {fileID: 8300000, guid: 8c454f68aaf24e94ca2f67a12f7bbd07, type: 3}
-  waitingThreshold: 30
+  waitingThreshold: 20
 --- !u!1 &1085893456
 GameObject:
   m_ObjectHideFlags: 0

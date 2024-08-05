@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77e55ff9799271b4cab6a3468b648e48
+guid: 7c0ed32181763b04d9b65df86b664849
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soup_Signs_Decorations_0
+      name: Plants_for_enviorment-1_0
       rect:
         serializedVersion: 2
-        x: 139
-        y: 1107
-        width: 556
-        height: 581
+        x: 143
+        y: 636
+        width: 107
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6055bc6f69c62d4885ab412ff802fb4
-      internalID: -1299652713
+      spriteID: 6013b2fb11eb1b146bc371b4d81f09c4
+      internalID: -1343864916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soup_Signs_Decorations_2
+      name: Plants_for_enviorment-1_1
       rect:
         serializedVersion: 2
-        x: 855
-        y: 1086
-        width: 590
-        height: 619
+        x: 363
+        y: 637
+        width: 116
+        height: 147
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a25957d5e4dbc3c47aeba0785a6e4d1e
-      internalID: -1846521542
+      spriteID: e6583783df222d6449a94e06c5245e1c
+      internalID: 952122595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soup_Signs_Decorations_3
+      name: Plants_for_enviorment-1_2
       rect:
         serializedVersion: 2
-        x: 387
-        y: 144
-        width: 722
-        height: 803
+        x: 136
+        y: 411
+        width: 122
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +179,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 391fbfe772fdc644ea984e19cceccf2d
-      internalID: 1786389226
+      spriteID: 533cd9f7b6f41f84db2e353111c50bec
+      internalID: 1604316146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plants_for_enviorment-1_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 413
+        width: 100
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467abd7e2f701cf4ca0e703f85738227
+      internalID: -1297643710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plants_for_enviorment-1_4
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 132
+        width: 193
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7e2467c3e45b64c9219f7234fb461d
+      internalID: -1190757755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plants_for_enviorment-1_5
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 132
+        width: 136
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785c0d9f028e86940801cc2b993c6c70
+      internalID: 1974714922
       vertices: []
       indices: 
       edges: []
@@ -196,10 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Soup_Signs_Decorations_0: -1299652713
-      Soup_Signs_Decorations_1: -2032428939
-      Soup_Signs_Decorations_2: -1846521542
-      Soup_Signs_Decorations_3: 1786389226
+      Plants_for_enviorment-1_0: -1343864916
+      Plants_for_enviorment-1_1: 952122595
+      Plants_for_enviorment-1_2: 1604316146
+      Plants_for_enviorment-1_3: -1297643710
+      Plants_for_enviorment-1_4: -1190757755
+      Plants_for_enviorment-1_5: 1974714922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

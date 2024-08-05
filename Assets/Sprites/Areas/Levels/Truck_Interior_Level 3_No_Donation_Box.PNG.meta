@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77e55ff9799271b4cab6a3468b648e48
+guid: bda422aa694288d4499d08e383b16d63
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,70 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Soup_Signs_Decorations_0
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 1107
-        width: 556
-        height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6055bc6f69c62d4885ab412ff802fb4
-      internalID: -1299652713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soup_Signs_Decorations_2
-      rect:
-        serializedVersion: 2
-        x: 855
-        y: 1086
-        width: 590
-        height: 619
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a25957d5e4dbc3c47aeba0785a6e4d1e
-      internalID: -1846521542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soup_Signs_Decorations_3
-      rect:
-        serializedVersion: 2
-        x: 387
-        y: 144
-        width: 722
-        height: 803
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 391fbfe772fdc644ea984e19cceccf2d
-      internalID: 1786389226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -195,11 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Soup_Signs_Decorations_0: -1299652713
-      Soup_Signs_Decorations_1: -2032428939
-      Soup_Signs_Decorations_2: -1846521542
-      Soup_Signs_Decorations_3: 1786389226
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

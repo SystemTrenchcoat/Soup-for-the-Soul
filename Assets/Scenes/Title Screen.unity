@@ -853,6 +853,7 @@ GameObject:
   - component: {fileID: 2044834532}
   - component: {fileID: 2044834536}
   - component: {fileID: 2044834537}
+  - component: {fileID: 2044834538}
   m_Layer: 0
   m_Name: CursorController
   m_TagString: Player
@@ -989,9 +990,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 45a98955fa8cae34fa3a94c7e702c893, type: 3}
   - {fileID: 21300000, guid: 7112346986e93b841af955ff460735b3, type: 3}
   areaSprites:
-  - {fileID: 21300000, guid: c0246a592c0ead444a45deb13f954346, type: 3}
-  - {fileID: 21300000, guid: 41e99fba6ef6ddd4ea8c5e6a8f239d3f, type: 3}
-  - {fileID: 21300000, guid: df0ebab2c3229bc428a2562d17c108e5, type: 3}
+  - {fileID: 21300000, guid: caec94e1ed57f5444ba4ace0f3af3ee0, type: 3}
+  - {fileID: 21300000, guid: 7a78eeafef4bc774ba30ee8b982202ab, type: 3}
+  - {fileID: 21300000, guid: bda422aa694288d4499d08e383b16d63, type: 3}
   areaTimer:
   - 90
   - 90
@@ -1013,3 +1014,15 @@ MonoBehaviour:
   popularity: 0
   points: 0
   levelTimer: 90
+--- !u!114 &2044834538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044834531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8723b7374dbbab94591795e9ab6fe5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

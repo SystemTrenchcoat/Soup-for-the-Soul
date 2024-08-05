@@ -21,8 +21,8 @@ public class Patron : MonoBehaviour
     private Soup soup;
     public List<GameObject> order;
     private int maxIngredients = 3;
-    private float timer = 30f;
-    private float timerConstant = 30f;
+    private float timer = 20f;
+    private float timerConstant = 20f;
 
     public bool[] ingredients = new bool[4];
     public List<Sprite> sprites = new List<Sprite>();

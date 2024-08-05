@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShopButton : MonoBehaviour
 {
-    public enum type { wait, donation, popularity };
+    public enum type { wait, donation, popularity, hat };
     public type upgrade;
     public float value;
     // Start is called before the first frame update

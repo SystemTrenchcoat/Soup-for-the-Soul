@@ -9,11 +9,17 @@ public class Upgrades : MonoBehaviour
     private float popularityIncrease = 0;
     private bool hat = false;
 
+    public float WaitIncrease { get { return waitIncrease; } }
+    public float DonationChance { get {  return donationChance; } }
+    public float PopularityIncrease { get { return popularityIncrease; } }
+    public bool Hat { get {  return hat; } }
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
+
 
     public void IncreaseWait(float inc)
     {

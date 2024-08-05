@@ -9,6 +9,11 @@ public class AssetHandler : MonoBehaviour
     public List<Sprite> area2Ingredients = new List<Sprite>();
     public List<Sprite> area3Ingredients = new List<Sprite>();
 
+    public List<Sprite> area0Soups = new List<Sprite>();
+    public List<Sprite> area1Soups = new List<Sprite>();
+    public List<Sprite> area2Soups = new List<Sprite>();
+    public List<Sprite> area3Soups = new List<Sprite>();
+
     public List<Sprite> areaSprites = new List<Sprite>();
 
     public List<float> areaTimer = new List<float>();

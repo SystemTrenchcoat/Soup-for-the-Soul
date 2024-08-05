@@ -21,8 +21,8 @@ public class Patron : MonoBehaviour
     private Soup soup;
     public List<GameObject> order;
     private int maxIngredients = 3;
-    private float timer = 20f;
-    private float timerConstant = 20f;
+    private float timer = 30f;
+    private float timerConstant = 30f;
 
     public bool[] ingredients = new bool[4];
     public List<Sprite> sprites = new List<Sprite>();
@@ -52,10 +52,12 @@ public class Patron : MonoBehaviour
         }
     }
 
+
+
     public void GenerateOrder()
     {
         int max = GameObject.FindGameObjectWithTag("Player").GetComponent<AssetHandler>().levelIngredientCount();
-        Debug.Log(max);
+        //Debug.Log(max);
         for (int i = 0; i < maxIngredients; i++)
         {
             int sel = Random.Range(0, max);// + 1);
@@ -76,6 +78,7 @@ public class Patron : MonoBehaviour
     public double CheckOrder() 
     {
         int score = 0;
+        int max = 20;
 
         if(soup.bowl && soup.broth)
         {
@@ -84,13 +87,34 @@ public class Patron : MonoBehaviour
 
         for (int i = 0; i < ingredients.Length; i++)
         {
-            if (ingredients[i] && soup.ingredientList[i].GetComponent<SpriteRenderer>().enabled == true)
+            if (ingredients[i])
             {
-                score += 20;
+                if (soup.ingredientList[i].GetComponent<SpriteRenderer>().enabled == true)
+                {
+                    score += 20;
+                }
+                
+
+                max += 20;
             }
         }
 
-        return score;
+        bool correct = false;
+
+        if (score == max)
+        {
+            correct = true;
+        }
+
+        if (timer <= timerConstant / 2)
+        {
+            score = score / 2;
+        }
+
+        //Debug.Log(score);
+        //Debug.Log(max);
+        GetComponent<Patronv2>().ServePatron(correct);
+        return score * (1 + GameObject.FindGameObjectWithTag("Player").GetComponent<Upgrades>().PopularityIncrease);
     }
     
     public void GeneratePatron() 
@@ -110,11 +134,11 @@ public class Patron : MonoBehaviour
         }
 
         GetComponent<Image>().sprite = sprites[j];
-        Debug.Log("Generate");
+        //Debug.Log("Generate");
 
         foreach (GameObject go in order)
         {
-            Debug.Log(go.name);
+            //Debug.Log(go.name);
             go.GetComponent<SpriteRenderer>().enabled = false;
         }
 

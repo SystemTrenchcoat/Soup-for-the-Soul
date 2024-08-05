@@ -8,6 +8,8 @@ public class Game : MonoBehaviour
     public double popularity = 0;
     public double points = 0;
     public float levelTimer = 0;
+    public int patronsServed = 0;
+    public int totalPatronsServed = 0;
 
     // Start is called before the first frame update
     void Start()
